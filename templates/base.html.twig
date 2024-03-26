@@ -33,7 +33,7 @@
 
 			<div class="text-right">
 				<div class="text-sm text-gray-400 dar:text-gray-500">
-					{% if app.user %}
+					{% if is_granted('IS_AUTHENTICATED_FULLY') %}
 					<div>
 						<a href="{{ path('app_micro_post_add') }}">New</a>
 					</div>
